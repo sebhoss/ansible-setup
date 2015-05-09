@@ -1,0 +1,7 @@
+sonarqube:
+  postgres:
+    version: 9.4
+    user: sonar
+    password: sonar
+  home: SonarQube
+  version: latest

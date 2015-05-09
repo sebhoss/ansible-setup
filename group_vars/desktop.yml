@@ -1,0 +1,16 @@
+---
+user:
+  name: sebhoss
+  home: /home/sebhoss
+  sofware: /home/sebhoss/Software
+  git: /home/sebhoss/git
+  ssh:
+    key: desktop
+artifactory:
+  http:
+    port: 50000
+sonarqube:
+  http:
+    port: 51000
+  postgres:
+    port: 51100

@@ -1,0 +1,3 @@
+artifactory:
+  home: Artifactory
+  version: 3.6.0

@@ -1,0 +1,13 @@
+---
+- name: create gnupg config directory
+  file:
+    path: "{{ user.home }}/{{ gnupg.config.home }}"
+    mode: 0700
+    state: directory
+  tags: gnupg
+
+- name: copy gnupg settings
+  copy:
+    src: gpg.conf
+    dest: "{{ user.home }}/{{ gnupg.config.home }}/gpg.conf"
+  tags: gnupg

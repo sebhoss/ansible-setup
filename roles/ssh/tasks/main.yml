@@ -1,0 +1,32 @@
+---
+- name: Create ssh config directory
+  file:
+    path: "{{ user.home }}/{{ ssh.config.home }}"
+    mode: 0700
+    state: directory
+  tags: ssh
+
+- name: Create git ssh config sub-directory
+  file:
+    path: "{{ user.home }}/{{ ssh.config.home }}/git"
+    mode: 0700
+    state: directory
+  tags: ssh
+
+- name: copy ssh settings
+  template:
+    src: config.j2
+    dest: "{{ user.home }}/{{ ssh.config.home }}/config"
+  tags: ssh
+
+- name: copy personal public ssh key
+  copy:
+    src: git/{{ ssh.personal.key }}.pub
+    dest: "{{ user.home }}/{{ ssh.config.home }}/git/{{ ssh.personal.key }}.pub"
+  tags: ssh
+
+- name: copy personal private ssh key
+  copy:
+    content: "{{ ssh.private.key }}"
+    dest: "{{ user.home }}/{{ ssh.config.home }}/git/{{ ssh.personal.key }}"
+  tags: ssh

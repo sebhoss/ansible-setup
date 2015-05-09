@@ -1,0 +1,18 @@
+---
+- name: add Spotify key
+  become: yes
+  become_method: sudo
+  apt_key: id=94558F59 keyserver="hkp://keyserver.ubuntu.com:80" state=present
+  tags: spotify
+
+- name: add Spotify repository
+  become: yes
+  become_method: sudo
+  apt_repository: repo="deb http://repository.spotify.com stable non-free"
+  tags: spotify
+
+- name: ensure Spotify is installed
+  become: yes
+  become_method: sudo
+  apt: pkg=spotify-client  state=installed
+  tags: spotify

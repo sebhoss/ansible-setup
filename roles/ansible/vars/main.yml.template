@@ -1,0 +1,6 @@
+---
+ansible:
+  config:
+    home: .ansible
+  vault:
+    password: your-password

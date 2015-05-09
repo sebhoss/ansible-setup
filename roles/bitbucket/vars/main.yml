@@ -1,0 +1,34 @@
+bitbucket:
+  home: bitbucket
+  repositories:
+    - afero
+    - arikuzu
+    - babili
+    - css
+    - ekagi
+    - endless
+    - fairbund
+    - footzy
+    - lqj
+    - java-code-quality
+    - java-testing-strategies
+    - junit-di-rule
+    - junit-performance-rule
+    - klaraj
+    - kompreni
+    - kurado
+    - noti
+    - pruvo
+    - recenzo
+    - relajso
+    - samca
+    - simca
+    - setup-your-development-environment
+    - singarde
+    - spring-boot
+    - sola
+    - static-site-maven-plugin
+    - trimtab
+    - verkoj
+  wikis:
+    - lqj

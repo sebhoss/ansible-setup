@@ -1,0 +1,20 @@
+---
+- hosts: desktop
+  user: "{{ user.name }}"
+  sudo: no
+  roles:
+    - ansible
+    - artifactory
+    - atom
+    - bash
+    - bitbucket
+    - git
+    - github
+    - gnupg
+    - maven
+    - mpv
+    - sonarqube
+    - spotify
+    - ssh
+    - terminator
+    - weechat

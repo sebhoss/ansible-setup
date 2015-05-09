@@ -1,0 +1,9 @@
+---
+maven:
+  config:
+    home: .m2
+sonatype:
+  username: your-username
+  password: your-password
+github:
+  password: your-password

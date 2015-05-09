@@ -1,0 +1,6 @@
+---
+- name: copy bash settings
+  copy: src={{ item }} dest={{ user.home }}/.{{ item | basename }}
+  with_fileglob:
+    - ./*
+  tags: bash

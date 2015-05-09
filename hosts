@@ -1,0 +1,7 @@
+# Ansible HOSTS file
+#
+# Currently just contains 'localhost' since all software is expected to be installed locally
+#
+
+[desktop]
+localhost ansible_connection=local

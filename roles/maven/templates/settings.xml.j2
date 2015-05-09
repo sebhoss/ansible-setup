@@ -1,0 +1,27 @@
+<settings>
+  <servers>
+    <server>
+      <id>sonatype-nexus-snapshots</id>
+      <username>{{ sonatype.username }}</username>
+      <password>{{ sonatype.password }}</password>
+    </server>
+    <server>
+      <id>sonatype-nexus-staging</id>
+      <username>{{ sonatype.username }}</username>
+      <password>{{ sonatype.password }}</password>
+    </server>
+    <server>
+      <id>github</id>
+      <username></username>
+      <password>{{ github.password }}</password>
+    </server>
+  </servers>
+  <mirrors>
+    <mirror>
+      <id>remote-repos</id>
+      <name>remote-repos</name>
+      <mirrorOf>*</mirrorOf>
+      <url>http://localhost:{{ artifactory.http.port }}/artifactory/remote-repos</url>
+    </mirror>
+  </mirrors>
+</settings>

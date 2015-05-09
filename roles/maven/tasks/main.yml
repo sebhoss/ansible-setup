@@ -1,0 +1,13 @@
+---
+- name: create maven config directory
+  file:
+    path: "{{ user.home }}/{{ maven.config.home }}"
+    mode: 0700
+    state: directory
+  tags: maven
+
+- name: copy maven settings
+  template:
+    src: settings.xml.j2
+    dest: "{{ user.home }}/{{ maven.config.home }}/settings.xml"
+  tags: maven

@@ -1,0 +1,30 @@
+---
+- name: create BitBucket directories
+  file:
+    path: "{{ user.git }}/{{ bitbucket.home }}"
+    mode: 0700
+    state: directory
+  tags: bitbucket
+
+- name: ensure BitBucket is a known host
+  lineinfile:
+    dest: "{{ user.home }}/.ssh/known_hosts"
+    create: yes
+    state: present
+    line: "{{ lookup('pipe', 'ssh-keyscan -t rsa bitbucket.org') }}"
+    regexp: "^bitbucket.\\.org"
+  tags: bitbucket
+
+- name: clone BitBucket repositories
+  git:
+    repo: "git@bitbucket.org:{{ user.name }}/{{ item }}.git"
+    dest: "{{ user.git }}/{{ bitbucket.home }}/{{ item }}"
+  with_items: "{{ bitbucket.repositories }}"
+  tags: bitbucket
+
+- name: clone BitBucket wiki repositories
+  git:
+    repo: "git@bitbucket.org:{{ user.name }}/{{ item }}.git/wiki"
+    dest: "{{ user.git }}/{{ bitbucket.home }}/{{ item }}.wiki"
+  with_items: "{{ bitbucket.wikis }}"
+  tags: bitbucket

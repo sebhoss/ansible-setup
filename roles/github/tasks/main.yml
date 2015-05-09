@@ -1,0 +1,30 @@
+---
+- name: create GitHub directory
+  file:
+    path: "{{ user.git }}/{{ github.home }}"
+    mode: 0700
+    state: directory
+  tags: github
+
+- name: ensure github.com is a known host
+  lineinfile:
+    dest: "{{ user.home }}/.ssh/known_hosts"
+    create: yes
+    state: present
+    line: "{{ lookup('pipe', 'ssh-keyscan -t rsa github.com') }}"
+    regexp: "^github\\.com"
+  tags: github
+
+- name: clone GitHub repositories
+  git:
+    repo: "git@github.com:{{ user.name }}/{{ item }}.git"
+    dest: "{{ user.git }}/{{ github.home }}/{{ item }}"
+  with_items: "{{ github.repositories }}"
+  tags: github
+
+- name: clone GitHub wiki repositories
+  git:
+    repo: "git@github.com:{{ user.name }}/{{ item }}.wiki.git"
+    dest: "{{ user.git }}/{{ github.home }}/{{ item }}.wiki"
+  with_items: "{{ github.wikis }}"
+  tags: github

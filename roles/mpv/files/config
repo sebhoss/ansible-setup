@@ -1,0 +1,14 @@
+# Audio language preference
+alang=en,de
+
+# Subtitle language preference
+slang=en,de
+
+# Start in fullscreen mode
+fullscreen=yes
+
+# Stay on top of other windows
+ontop=yes
+
+# Monitor aspect ratio, just in case 
+monitoraspect=16:10

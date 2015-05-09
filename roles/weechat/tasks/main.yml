@@ -1,0 +1,21 @@
+---
+- name: Create WeeChat directory
+  file:
+    path: "{{ user.home }}/{{ weechat.config.home }}"
+    mode: 0700
+    state: directory
+  tags: weechat
+
+- name: copy WeeChat settings
+  copy:
+    src: "{{ item }}"
+    dest: "{{ user.home }}/{{ weechat.config.home }}/{{ item | basename }}"
+  with_fileglob:
+    - ./*
+  tags: weechat
+
+- name: create WeeChat IRC settings
+  template:
+    src: irc.conf.j2
+    dest: "{{ user.home }}/{{ weechat.config.home }}/irc.conf"
+  tags: weechat

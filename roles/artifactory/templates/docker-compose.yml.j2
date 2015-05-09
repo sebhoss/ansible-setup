@@ -1,0 +1,8 @@
+artifactory:
+  image: mattgruter/artifactory:{{ artifactory.version }}
+  volumes:
+   - ./data:/artifactory/data
+   - ./logs:/artifactory/logs
+   - ./backup:/artifactory/backup
+  ports:
+   - {{ artifactory.http.port }}:8080

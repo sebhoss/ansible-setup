@@ -1,0 +1,40 @@
+github:
+  home: github
+  repositories:
+    - annotated-contracts
+    - bc-clj
+    - bootstrap-clj
+    - camel-slack-webhook-component
+    - clojure
+    - clojure-parent
+    - def-clj
+    - denove
+    - doxia-module-wikitext
+    - doxia-textile-sample
+    - finj
+    - fiscal-year
+    - github-maven-extension
+    - java-parent
+    - jdt-settings
+    - junit-testdata-rule
+    - math-clj
+    - maven-boms
+    - maven-docbook-sample
+    - null-analysis
+    - reguloj
+    - rondo
+    - scala-parent
+    - sebhoss.github.io
+    - sequel-parser
+    - storage-units
+    - superpom
+    - suppress-warnings
+    - truth-property-proposition
+  wikis:
+    - annotated-contracts
+    - fiscal-year
+    - null-analysis
+    - reguloj
+    - storage-units
+    - suppress-warnings
+    - truth-property-proposition
