@@ -1,9 +1,7 @@
 ---
 user:
-  name: sebhoss
-  home: /home/sebhoss
-  sofware: /home/sebhoss/Software
-  git: /home/sebhoss/git
+  git: ~/git
+  software: ~/Software
   ssh:
     key: desktop
 artifactory:

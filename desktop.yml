@@ -1,7 +1,5 @@
 ---
 - hosts: desktop
-  user: "{{ user.name }}"
-  sudo: no
   roles:
     - ansible
     - artifactory
@@ -13,6 +11,7 @@
     - gnupg
     - maven
     - mpv
+    - redshift
     - sonarqube
     - spotify
     - ssh

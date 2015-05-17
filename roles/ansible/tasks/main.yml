@@ -2,5 +2,5 @@
 - name: create Ansible vault password file
   copy:
     content: "{{ ansible.vault.password }}"
-    dest: "{{ user.home }}/{{ ansible.config.home }}/pass.txt"
+    dest: "~/{{ ansible.config.home }}/pass.txt"
   tags: ansible

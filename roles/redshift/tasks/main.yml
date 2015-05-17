@@ -1,0 +1,24 @@
+---
+- name: ensure that redshift is install
+  become: yes
+  become_method: sudo
+  apt:
+    pkg: redshift
+    state: installed
+  tags: redshift
+
+- name: ensure that redshift-gtk is install
+  become: yes
+  become_method: sudo
+  apt:
+    pkg: redshift-gtk
+    state: installed
+  tags: redshift
+
+- name: copy redshift settings
+  copy:
+    src: "{{ item }}"
+    dest: "~/.config/{{ item | basename }}"
+  with_fileglob:
+    - ./*
+  tags: redshift
