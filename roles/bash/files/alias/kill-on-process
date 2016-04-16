@@ -1,0 +1,6 @@
+# kills of process blocking a specific port
+# sudo kill $(sudo lsof -t -i:9001)
+kill-on-port() {
+  process_to_kill=`sudo lsof -t -i:"$1"`
+  sudo kill "$process_to_kill"
+}

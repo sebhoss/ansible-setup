@@ -1,0 +1,24 @@
+all: help
+
+help:
+	@echo ""
+	@echo "-- Help Menu"
+	@echo ""
+	@echo "   1. make start        - start Nexus"
+	@echo "   2. make stop         - stop Nexus"
+	@echo "   3. make logs         - view logs"
+	@echo "   4. make purge        - stop and remove the container"
+
+start:
+	@docker-compose up -d
+
+stop:
+	@docker-compose stop
+
+logs:
+	@docker-compose logs
+
+purge: stop;
+	@docker-compose rm
+
+.PHONY: all help start stop logs purge

@@ -1,6 +1,44 @@
 ---
 - name: copy bash settings
-  copy: src={{ item }} dest={{ user.home }}/.{{ item | basename }}
+  copy:
+    src: "{{ item }}"
+    dest: "~/.{{ item | basename }}"
   with_fileglob:
-    - ./*
+    - ./home/*
+  tags: bash
+
+- name: create extra profiles directory
+  file:
+    path: "~/.profile.d"
+    mode: 0700
+    state: directory
+  tags: bash
+
+- name: copy extra profiles
+  copy:
+    src: "{{ item }}"
+    dest: "~/.profile.d/{{ item | basename }}"
+  with_fileglob:
+    - ./profile/*
+  tags: bash
+
+- name: create extra aliases directory
+  file:
+    path: "~/.alias.d"
+    mode: 0700
+    state: directory
+  tags: bash
+
+- name: copy extra aliases
+  copy:
+    src: "{{ item }}"
+    dest: "~/.alias.d/{{ item | basename }}"
+  with_fileglob:
+    - ./alias/*
+  tags: bash
+
+- name: create Travis-CI login alias
+  template:
+    src: travis.j2
+    dest: "~/.alias.d/travis"
   tags: bash

@@ -1,0 +1,23 @@
+---
+- name: clone metio.wtf repositories
+  git:
+    repo: "{{ item.repository }}"
+    dest: "{{ user.git }}/metio.wtf/{{ item.name }}"
+  with_items: "{{ metio.projects }}"
+  tags: metio
+
+- name: setup main mirrors
+  command: "git remote set-url origin --push --add {{ item.repository }}"
+  args:
+    chdir: "{{ user.git }}/metio.wtf/{{ item.name }}"
+  with_items: "{{ metio.projects }}"
+  tags: metio_mirrors
+
+- name: setup alternative mirrors
+  command: "git remote set-url origin --push --add {{ item.1 }}"
+  args:
+    chdir: "{{ user.git }}/metio.wtf/{{ item.0.name }}"
+  with_subelements:
+    - "{{ metio.projects }}"
+    - mirrors
+  tags: metio_mirrors

@@ -1,22 +1,22 @@
-postgresql:
+sonarqube:
+  image: sonarqube:{{ sonarqube.version }}
+  volumes:
+    - ./extensions:/opt/sonarqube/extensions
+    - ./data:/opt/sonarqube/data
+  environment:
+    - SONARQUBE_JDBC_USERNAME={{ sonarqube.postgres.user }}
+    - SONARQUBE_JDBC_PASSWORD={{ sonarqube.postgres.password }}
+    - SONARQUBE_JDBC_URL=jdbc:postgresql://postgres/{{ sonarqube.postgres.user }}
+  links:
+    - postgres
+  ports:
+    - "{{ ports.sonarqube.http }}:9000"
+postgres:
   image: postgres:{{ sonarqube.postgres.version }}
   environment:
-    - POSTGRES_USER={{ sonarqube.postgres.user }}
     - POSTGRES_PASSWORD={{ sonarqube.postgres.password }}
+    - POSTGRES_USER={{ sonarqube.postgres.user }}
   volumes:
-   - ./psql:/var/lib/postgresql/data
-  ports:
-   - "{{ sonarqube.postgres.port }}:5432"
-sonarqube:
-  image: harbur/sonarqube:{{ sonarqube.version }}
-  links:
-    - postgresql:db
-  environment:
-    - DB_USER={{ sonarqube.postgres.user }}
-    - DB_PASS={{ sonarqube.postgres.password }}
-    - DB_NAME={{ sonarqube.postgres.user }}
-  volumes:
-   - ./extensions:/opt/sonar/extensions
-   - ./logs:/opt/sonar/logs/
-  ports:
-    - "{{ sonarqube.http.port }}:9000"
+    - ./psql:/var/lib/postgresql/data
+  expose:
+    - "5432"

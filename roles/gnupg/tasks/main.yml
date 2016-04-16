@@ -1,13 +1,27 @@
 ---
 - name: create gnupg config directory
   file:
-    path: "{{ user.home }}/{{ gnupg.config.home }}"
+    path: "~/.gnupg"
     mode: 0700
     state: directory
   tags: gnupg
 
 - name: copy gnupg settings
   copy:
-    src: gpg.conf
-    dest: "{{ user.home }}/{{ gnupg.config.home }}/gpg.conf"
+    src: "{{ item }}"
+    dest: "~/.gnupg/{{ item | basename }}"
+  with_fileglob:
+    - ./*
+  notify:
+     - gpg-agent
+     - dirmngr
+  tags: gnupg
+
+- name: remove gnome autostarts
+  file:
+    path: "~/.config/autostart/{{ item }}"
+    state: absent
+  with_items:
+    - gnome-keyring-gpg.desktop
+    - gnome-keyring-ssh.desktop
   tags: gnupg

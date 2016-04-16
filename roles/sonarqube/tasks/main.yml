@@ -1,7 +1,7 @@
 ---
 - name: create SonarQube directories
   file:
-    path: "{{ user.sofware }}/{{ item }}"
+    path: "{{ user.software }}/{{ item }}"
     mode: 0700
     state: directory
     recurse: true
@@ -15,11 +15,11 @@
 - name: create SonarQube docker-compose file
   template:
     src: docker-compose.yml.j2
-    dest: "{{ user.sofware }}/{{ sonarqube.home }}/docker-compose.yml"
+    dest: "{{ user.software }}/{{ sonarqube.home }}/docker-compose.yml"
   tags: sonarqube
 
 - name: create SonarQube Makefile
   template:
     src: Makefile.j2
-    dest: "{{ user.sofware }}/{{ sonarqube.home }}/Makefile"
+    dest: "{{ user.software }}/{{ sonarqube.home }}/Makefile"
   tags: sonarqube

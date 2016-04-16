@@ -1,5 +1,4 @@
 bitbucket:
-  home: bitbucket
   repositories:
     - afero
     - arikuzu

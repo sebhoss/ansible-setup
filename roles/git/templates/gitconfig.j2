@@ -1,6 +1,7 @@
 [user]
   name = {{ name }}
   email = {{ email }}
+  signingkey = 8B858C82
 
 [url "https://github.com/"]
     insteadOf = gh:
@@ -29,3 +30,12 @@
     added = yellow
     changed = green
     untracked = red
+
+[push]
+    default = simple
+
+[commit]
+    gpgsign = true
+
+[gpg]
+    program = gpg2

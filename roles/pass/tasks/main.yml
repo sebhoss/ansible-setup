@@ -1,0 +1,14 @@
+---
+- name: ensure that pass is install
+  become: yes
+  become_method: sudo
+  apt:
+    pkg: pass
+    state: installed
+  tags: pass
+
+- name: clone pass repository
+  git:
+    repo: "git@bitbucket.org:{{ nick }}/password-store.git"
+    dest: "~/.password-store"
+  tags: pass

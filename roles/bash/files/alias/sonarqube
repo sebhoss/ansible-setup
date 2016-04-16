@@ -1,0 +1,5 @@
+# SonarQube code analytics
+alias sonarqube='cd ~/Software/SonarQube'
+alias sonarqube-up='(sonarqube && make start)'
+alias sonarqube-down='(sonarqube && make stop)'
+alias sonarqube-log='(sonarqube && make logs)'

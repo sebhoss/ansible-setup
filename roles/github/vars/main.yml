@@ -1,5 +1,4 @@
 github:
-  home: github
   repositories:
     - annotated-contracts
     - bc-clj
@@ -21,6 +20,7 @@ github:
     - maven-boms
     - maven-docbook-sample
     - null-analysis
+    - playbooks
     - reguloj
     - rondo
     - scala-parent
@@ -36,5 +36,6 @@ github:
     - null-analysis
     - reguloj
     - storage-units
+    - superpom
     - suppress-warnings
     - truth-property-proposition

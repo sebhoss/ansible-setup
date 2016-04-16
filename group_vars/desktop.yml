@@ -1,14 +1,11 @@
 ---
 user:
-  git: ~/git
-  software: ~/Software
+  git: "~/git"
+  software: "~/Software"
   ssh:
     key: desktop
-artifactory:
-  http:
-    port: 50000
-sonarqube:
-  http:
-    port: 51000
-  postgres:
-    port: 51100
+ports:
+  sonarqube:
+    http: 59000
+  nexus:
+    http: 60000

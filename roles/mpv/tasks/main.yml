@@ -1,7 +1,7 @@
 ---
 - name: create mpv config directory
   file:
-    path: "{{ user.home }}/{{ mpv.config.home }}"
+    path: "~/{{ mpv.config.home }}"
     mode: 0700
     state: directory
   tags: mpv
@@ -9,5 +9,5 @@
 - name: copy mpv config
   copy:
     src: config
-    dest: "{{ user.home }}/{{ mpv.config.home }}/config"
+    dest: "~/{{ mpv.config.home }}/config"
   tags: mpv

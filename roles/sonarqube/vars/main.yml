@@ -1,7 +1,7 @@
 sonarqube:
   postgres:
-    version: 9.4
+    version: 9.5.2
     user: sonar
     password: sonar
   home: SonarQube
-  version: latest
+  version: 5.4

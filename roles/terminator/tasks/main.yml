@@ -1,8 +1,0 @@
----
-- name: ensure Terminator is installed
-  become: yes
-  become_method: sudo
-  apt:
-    pkg: terminator
-    state: installed
-  tags: terminator

@@ -10,5 +10,14 @@ fullscreen=yes
 # Stay on top of other windows
 ontop=yes
 
-# Monitor aspect ratio, just in case 
+# Monitor aspect ratio, just in case
 monitoraspect=16:10
+
+# Hardware decoding
+hwdec=vaapi
+
+# Video output (required for hardware decoding)
+vo=opengl
+
+# Allow all codecs to be hardware decoded
+hwdec-codecs=all

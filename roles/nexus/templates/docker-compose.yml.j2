@@ -1,0 +1,10 @@
+# {{ ansible_managed }}
+
+nexus:
+  image: sonatype/nexus:{{ nexus.version }}
+  volumes:
+    - ./data:/sonatype-work
+  ports:
+   - {{ ports.nexus.http }}:8081
+  expose:
+   - 8081

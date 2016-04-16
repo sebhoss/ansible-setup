@@ -1,11 +1,18 @@
-Host github.com
+Host github
   User git
   Hostname github.com
   PreferredAuthentications publickey
   IdentityFile ~/.ssh/git/{{ ssh.personal.key }}
 
-Host bitbucket.org
+Host bitbucket
   User git
   Hostname bitbucket.org
   PreferredAuthentications publickey
   IdentityFile ~/.ssh/git/{{ ssh.personal.key }}
+
+Host gitlab
+  User git
+  Hostname gitlab.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/git/{{ ssh.personal.key }}
+  

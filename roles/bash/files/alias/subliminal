@@ -1,0 +1,1 @@
+alias subtitle='for file in *; do subliminal download -l en -s "$file"; done'

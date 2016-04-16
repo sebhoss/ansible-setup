@@ -21,7 +21,7 @@
       <id>remote-repos</id>
       <name>remote-repos</name>
       <mirrorOf>*</mirrorOf>
-      <url>http://localhost:{{ artifactory.http.port }}/artifactory/remote-repos</url>
+      <url>http://localhost:{{ ports.nexus.http }}/content/groups/public/</url>
     </mirror>
   </mirrors>
 </settings>

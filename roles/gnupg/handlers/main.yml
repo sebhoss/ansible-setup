@@ -1,0 +1,5 @@
+---
+- name: gpg-agent
+  shell: gpgconf --reload gpg-agent
+- name: dirmngr
+  shell: pkill dirmngr

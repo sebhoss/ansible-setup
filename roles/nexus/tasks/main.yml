@@ -1,0 +1,22 @@
+---
+- name: create Nexus directories
+  file:
+    path: "{{ user.software }}/{{ item }}"
+    mode: 0777
+    state: directory
+  with_items:
+    - "{{ nexus.home }}"
+    - "{{ nexus.home }}/data"
+  tags: nexus
+
+- name: create Nexus docker-compose file
+  template:
+    src: docker-compose.yml.j2
+    dest: "{{ user.software }}/{{ nexus.home }}/docker-compose.yml"
+  tags: nexus
+
+- name: create Nexus Makefile
+  template:
+    src: Makefile.j2
+    dest: "{{ user.software }}/{{ nexus.home }}/Makefile"
+  tags: nexus

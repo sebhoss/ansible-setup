@@ -1,17 +1,14 @@
 all:
-	@ansible-playbook -i hosts desktop.yml --vault-password-file ~/.ansible/pass.txt
+	@ansible-playbook -i hosts desktop.yml --vault-password-file ~/.ansible/pass.txt --ask-sudo-pass
 
 ansible:
 	@ansible-playbook -i hosts desktop.yml --tags ansible --vault-password-file ~/.ansible/pass.txt
 
-artifactory:
-	@ansible-playbook -i hosts desktop.yml --tags artifactory --vault-password-file ~/.ansible/pass.txt
-
-atom:
-	@ansible-playbook -i hosts desktop.yml --tags atom --vault-password-file ~/.ansible/pass.txt
-
 bash:
 	@ansible-playbook -i hosts desktop.yml --tags bash --vault-password-file ~/.ansible/pass.txt
+
+dry-bash:
+	@ansible-playbook -i hosts desktop.yml --tags bash --vault-password-file ~/.ansible/pass.txt --diff --check
 
 bitbucket:
 	@ansible-playbook -i hosts desktop.yml --tags bitbucket --vault-password-file ~/.ansible/pass.txt
@@ -28,21 +25,33 @@ gnupg:
 maven:
 	@ansible-playbook -i hosts desktop.yml --tags maven --vault-password-file ~/.ansible/pass.txt
 
+metio:
+	@ansible-playbook -i hosts desktop.yml --tags metio --vault-password-file ~/.ansible/pass.txt
+
+metio_mirrors:
+	@ansible-playbook -i hosts desktop.yml --tags metio_mirrors --vault-password-file ~/.ansible/pass.txt
+
 mpv:
 	@ansible-playbook -i hosts desktop.yml --tags mpv --vault-password-file ~/.ansible/pass.txt
+
+nexus:
+	@ansible-playbook -i hosts desktop.yml --tags nexus --vault-password-file ~/.ansible/pass.txt
+
+pass:
+	@ansible-playbook -i hosts desktop.yml --tags pass --vault-password-file ~/.ansible/pass.txt
+
+dry-pass:
+	@ansible-playbook -i hosts desktop.yml --tags pass --vault-password-file ~/.ansible/pass.txt --diff --check
 
 sonarqube:
 	@ansible-playbook -i hosts desktop.yml --tags sonarqube --vault-password-file ~/.ansible/pass.txt
 
 spotify:
-	@ansible-playbook -i hosts desktop.yml --tags spotify --vault-password-file ~/.ansible/pass.txt
+	@ansible-playbook -i hosts desktop.yml --tags spotify --vault-password-file ~/.ansible/pass.txt  --ask-sudo-pass
 
 ssh:
 	@ansible-playbook -i hosts desktop.yml --tags ssh --vault-password-file ~/.ansible/pass.txt
 
 terminator:
 	@ansible-playbook -i hosts desktop.yml --tags terminator --vault-password-file ~/.ansible/pass.txt
-
-weechat:
-	@ansible-playbook -i hosts desktop.yml --tags weechat --vault-password-file ~/.ansible/pass.txt
 

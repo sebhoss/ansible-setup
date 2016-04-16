@@ -1,0 +1,4 @@
+# gpg tasks
+sign() {
+  gpg2 --no-version --armor --sign "$1"
+}

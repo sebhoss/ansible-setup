@@ -2,18 +2,17 @@
 - hosts: desktop
   roles:
     - ansible
-    - artifactory
-    - atom
     - bash
     - bitbucket
     - git
     - github
     - gnupg
     - maven
+    - metio
     - mpv
+    - nexus
+    - pass
     - redshift
     - sonarqube
     - spotify
     - ssh
-    - terminator
-    - weechat
