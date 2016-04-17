@@ -25,9 +25,6 @@ gnupg:
 maven:
 	@ansible-playbook -i hosts desktop.yml --tags maven --vault-password-file ~/.ansible/pass.txt
 
-metio:
-	@ansible-playbook -i hosts desktop.yml --tags metio --vault-password-file ~/.ansible/pass.txt
-
 mpv:
 	@ansible-playbook -i hosts desktop.yml --tags mpv --vault-password-file ~/.ansible/pass.txt
 

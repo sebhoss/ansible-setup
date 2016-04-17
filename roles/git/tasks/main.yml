@@ -19,5 +19,30 @@
     state: directory
   tags:
     - git
-    - bitbucket
-    - github
+
+- name: create git group repository directories
+  file:
+    path: "{{ user.git }}/{{ item.group }}"
+    mode: 0700
+    state: directory
+  with_items: "{{ projects }}"
+  tags:
+    - git
+
+- name: clone git repositories
+  git:
+    repo: "{{ item.repository }}"
+    dest: "{{ user.git }}/{{ item.group }}/{{ item.name }}"
+  with_items: "{{ projects }}"
+  tags: git
+
+- name: setup git push mirrors
+  shell: "git remote set-url origin --push --add {{ item.1.location }} && touch {{ user.git }}/{{ item.0.group }}/{{ item.0.name }}/.ansible-git-mirror-{{ item.1.name }}"
+  args:
+    chdir: "{{ user.git }}/{{ item.0.group }}/{{ item.0.name }}"
+    creates: "{{ user.git }}/{{ item.0.group }}/{{ item.0.name }}/.ansible-git-mirror-{{ item.1.name }}"
+  with_subelements:
+    - "{{ projects }}"
+    - mirrors
+  tags: git
+    
