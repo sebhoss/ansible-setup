@@ -3,5 +3,9 @@ metio:
     - name: memoization.java
       repository: git@github.com:sebhoss/memoization.java.git
       mirrors:
-        - git@bitbucket.org:sebhoss/memoization.java.git
-        - git@gitlab.com:sebastian.hoss/memoization.java.git
+        - name: github
+          location: git@github.com:sebhoss/memoization.java.git
+        - name: bitbucket
+          location: git@bitbucket.org:sebhoss/memoization.java.git
+        - name: gitlab
+          location: git@gitlab.com:sebastian.hoss/memoization.java.git

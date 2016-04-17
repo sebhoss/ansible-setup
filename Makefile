@@ -28,9 +28,6 @@ maven:
 metio:
 	@ansible-playbook -i hosts desktop.yml --tags metio --vault-password-file ~/.ansible/pass.txt
 
-metio_mirrors:
-	@ansible-playbook -i hosts desktop.yml --tags metio_mirrors --vault-password-file ~/.ansible/pass.txt
-
 mpv:
 	@ansible-playbook -i hosts desktop.yml --tags mpv --vault-password-file ~/.ansible/pass.txt
 
