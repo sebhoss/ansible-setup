@@ -14,6 +14,7 @@ bitbucket:
 	@ansible-playbook -i hosts desktop.yml --tags bitbucket --vault-password-file ~/.ansible/pass.txt
 
 git:
+	@ssh-add ~/.ssh/git/key-for-git
 	@ansible-playbook -i hosts desktop.yml --tags git --vault-password-file ~/.ansible/pass.txt
 
 github:

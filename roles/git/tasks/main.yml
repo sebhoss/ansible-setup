@@ -30,9 +30,9 @@
     - git
 
 - name: clone git repositories
-  git:
-    repo: "{{ item.repository }}"
-    dest: "{{ user.git }}/{{ item.group }}/{{ item.name }}"
+  shell: "git clone {{ item.repository }} {{ user.git }}/{{ item.group }}/{{ item.name }}"
+  args:
+    creates: "{{ user.git }}/{{ item.group }}/{{ item.name }}"
   with_items: "{{ projects }}"
   tags: git
 
