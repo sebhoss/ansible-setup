@@ -22,3 +22,13 @@ projects:
         location: git@bitbucket.org:sebhoss/ansible-setup.git
       - name: gitlab
         location: git@gitlab.com:sebastian.hoss/ansible-setup.git
+  - name: maven-build-process
+    group: stable
+    repository: git@github.com:sebhoss/maven-build-process.git
+    mirrors:
+      - name: github
+        location: git@github.com:sebhoss/maven-build-process.git
+      - name: bitbucket
+        location: git@bitbucket.org:sebhoss/maven-build-process.git
+      - name: gitlab
+        location: git@gitlab.com:sebastian.hoss/maven-build-process.git
