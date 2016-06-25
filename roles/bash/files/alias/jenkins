@@ -1,5 +1,5 @@
 # Jenkins CI Server
-alias jenkins-dir='cd ~/Software/Jenkins'
-alias jenkins-up='(jenkins-dir && make start)'
-alias jenkins-down='(jenkins-dir && make stop)'
-alias jenkins-log='(jenkins-dir && make logs)'
+alias jenkins-home='cd ~/Software/Jenkins'
+alias jenkins-up='(jenkins-home && make start)'
+alias jenkins-down='(jenkins-home && make stop)'
+alias jenkins-log='(jenkins-home && make logs)'
