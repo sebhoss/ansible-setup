@@ -18,15 +18,3 @@
     src: config.j2
     dest: "~/{{ ssh.config.home }}/config"
   tags: ssh
-
-- name: copy personal public ssh key
-  copy:
-    src: git/{{ ssh.personal.key }}.pub
-    dest: "~/{{ ssh.config.home }}/git/{{ ssh.personal.key }}.pub"
-  tags: ssh
-
-- name: copy personal private ssh key
-  copy:
-    content: "{{ ssh.private.key }}"
-    dest: "~/{{ ssh.config.home }}/git/{{ ssh.personal.key }}"
-  tags: ssh
