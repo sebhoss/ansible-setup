@@ -3,7 +3,7 @@
 .PHONY: all
 all: help
 
-.PHONY: all
+.PHONY: help
 help:
 	@echo ""
 	@echo "-- Help Menu"
@@ -15,7 +15,7 @@ help:
 
 .PHONY: start
 start:
-	@docker-compose up -d
+	@docker-compose up -d --remove-orphans
 
 .PHONY: stop
 stop:
@@ -27,4 +27,4 @@ logs:
 
 .PHONY: purge
 purge: stop;
-	@docker-compose rm
+	@docker-compose rm -v --force

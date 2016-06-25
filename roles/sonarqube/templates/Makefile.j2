@@ -1,5 +1,9 @@
+# {{ ansible_managed }}
+
+.PHONY: all
 all: help
 
+.PHONY: help
 help:
 	@echo ""
 	@echo "-- Help Menu"
@@ -9,17 +13,18 @@ help:
 	@echo "   3. make logs         - view logs"
 	@echo "   4. make purge        - stop and remove the container"
 
+.PHONY: start
 start:
-	@docker-compose up -d
+	@docker-compose up -d --remove-orphans
 
+.PHONY: stop
 stop:
 	@docker-compose stop
 
+.PHONY: logs
 logs:
-	@docker-compose logs
+	@docker-compose logs --follow --tail=100
 
+.PHONY: purge
 purge: stop
-	@docker-compose rm
-
-.PHONY: all help start stop logs purge
-
+	@docker-compose rm -v --force
