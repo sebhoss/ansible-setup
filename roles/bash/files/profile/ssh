@@ -2,3 +2,8 @@ unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
   export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
 fi
+
+known_ssh_keys=`ssh-add -l`
+if [ ! $(echo $known_ssh_keys | grep -o -e key-for-git) ]; then
+    ssh-add "$HOME/.ssh/git/key-for-git"
+fi
