@@ -1,18 +1,22 @@
+# {{ ansible_managed }}
+
+IdentityFile ~/.ssh/git/key-for-git
+
 Host github
   Hostname github.com
   User git
   PreferredAuthentications publickey
-  IdentityFile ~/.ssh/git/{{ ssh.personal.key }}
+  IdentityFile ~/.ssh/git/key-for-git
 
 Host bitbucket
   Hostname bitbucket.org
   User git
   PreferredAuthentications publickey
-  IdentityFile ~/.ssh/git/{{ ssh.personal.key }}
+  IdentityFile ~/.ssh/git/key-for-git
 
 Host gitlab
   Hostname gitlab.com
   User git
   PreferredAuthentications publickey
-  IdentityFile ~/.ssh/git/{{ ssh.personal.key }}
+  IdentityFile ~/.ssh/git/key-for-git
   
