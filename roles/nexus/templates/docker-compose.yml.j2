@@ -2,6 +2,7 @@
 
 nexus:
   image: sonatype/nexus:{{ nexus.version }}
+  container_name: local-nexus
   volumes:
     - ./data:/sonatype-work
   ports:
