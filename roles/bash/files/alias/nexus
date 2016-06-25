@@ -1,5 +1,5 @@
 # Nexus Maven repository
-alias nexus='cd ~/Software/Nexus'
-alias nexus-up='(nexus && make start)'
-alias nexus-down='(nexus && make stop)'
-alias nexus-log='(nexus && make logs)'
+alias nexus-dir='cd ~/Software/Nexus'
+alias nexus-up='(nexus-dir && make start)'
+alias nexus-down='(nexus-dir && make stop)'
+alias nexus-log='(nexus-dir && make logs)'
