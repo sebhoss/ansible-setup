@@ -32,3 +32,43 @@ projects:
         location: git@bitbucket.org:sebhoss/maven-build-process.git
       - name: gitlab
         location: git@gitlab.com:sebastian.hoss/maven-build-process.git
+  - name: suppress-warnings
+    group: stable
+    repository: git@github.com:sebhoss/suppress-warnings.git
+    mirrors:
+      - name: github
+        location: git@github.com:sebhoss/suppress-warnings.git
+      - name: bitbucket
+        location: git@bitbucket.org:sebhoss/suppress-warnings.git
+      - name: gitlab
+        location: git@gitlab.com:sebastian.hoss/suppress-warnings.git
+  - name: null-analysis
+    group: stable
+    repository: git@github.com:sebhoss/null-analysis.git
+    mirrors:
+      - name: github
+        location: git@github.com:sebhoss/null-analysis.git
+      - name: bitbucket
+        location: git@bitbucket.org:sebhoss/null-analysis.git
+      - name: gitlab
+        location: git@gitlab.com:sebastian.hoss/null-analysis.git
+  - name: storage-units
+    group: stable
+    repository: git@github.com:sebhoss/storage-units.git
+    mirrors:
+      - name: github
+        location: git@github.com:sebhoss/storage-units.git
+      - name: bitbucket
+        location: git@bitbucket.org:sebhoss/storage-units.git
+      - name: gitlab
+        location: git@gitlab.com:sebastian.hoss/storage-units.git
+  - name: generic-types
+    group: stable
+    repository: git@github.com:sebhoss/generic-types.git
+    mirrors:
+      - name: github
+        location: git@github.com:sebhoss/generic-types.git
+      - name: bitbucket
+        location: git@bitbucket.org:sebhoss/generic-types.git
+      - name: gitlab
+        location: git@gitlab.com:sebastian.hoss/generic-types.git
