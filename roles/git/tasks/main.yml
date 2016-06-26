@@ -1,15 +1,8 @@
 ---
-- name: create git config directory
-  file:
-    path: "~/{{ git.config.home }}"
-    mode: 0700
-    state: directory
-  tags: git
-
-- name: create git config file
+- name: create global git config file
   template:
     src: gitconfig.j2
-    dest: "~/{{ git.config.home }}/gitconfig"
+    dest: "~/gitconfig"
   tags: git
 
 - name: create git repository directory
