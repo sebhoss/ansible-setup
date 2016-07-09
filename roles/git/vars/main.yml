@@ -1,71 +1,73 @@
 projects:
   - name: memoization.java
     group: prototypes
-    repository: git@github:sebhoss/memoization.java.git
+    repository: github:sebhoss/memoization.java.git
     mirrors:
       - name: github
-        location: git@github:sebhoss/memoization.java.git
+        location: github:sebhoss/memoization.java.git
       - name: bitbucket
-        location: git@bitbucket:sebhoss/memoization.java.git
+        location: bitbucket:sebhoss/memoization.java.git
       - name: gitlab
-        location: git@gitlab:sebastian.hoss/memoization.java.git
+        location: gitlab:sebastian.hoss/memoization.java.git
   - name: ansible-setup
     group: stable
-    repository: git@github:sebhoss/ansible-setup.git
+    repository: github:sebhoss/ansible-setup.git
     mirrors:
       - name: github
-        location: git@github:sebhoss/ansible-setup.git
+        location: github:sebhoss/ansible-setup.git
       - name: bitbucket
-        location: git@bitbucket:sebhoss/ansible-setup.git
+        location: bitbucket:sebhoss/ansible-setup.git
       - name: gitlab
-        location: git@gitlab:sebastian.hoss/ansible-setup.git
+        location: gitlab:sebastian.hoss/ansible-setup.git
   - name: maven-build-process
     group: stable
-    repository: git@github:sebhoss/maven-build-process.git
+    repository: github:sebhoss/maven-build-process.git
     mirrors:
       - name: github
-        location: git@github:sebhoss/maven-build-process.git
+        location: github:sebhoss/maven-build-process.git
       - name: bitbucket
-        location: git@bitbucket:sebhoss/maven-build-process.git
+        location: bitbucket:sebhoss/maven-build-process.git
       - name: gitlab
-        location: git@gitlab:sebastian.hoss/maven-build-process.git
+        location: gitlab:sebastian.hoss/maven-build-process.git
   - name: suppress-warnings
     group: stable
-    repository: git@github:sebhoss/suppress-warnings.git
+    repository: github:sebhoss/suppress-warnings.git
     mirrors:
       - name: github
-        location: git@github:sebhoss/suppress-warnings.git
+        location: github:sebhoss/suppress-warnings.git
       - name: bitbucket
-        location: git@bitbucket:sebhoss/suppress-warnings.git
+        location: bitbucket:sebhoss/suppress-warnings.git
       - name: gitlab
-        location: git@gitlab:sebastian.hoss/suppress-warnings.git
+        location: gitlab:sebastian.hoss/suppress-warnings.git
+      - name: pikacode
+        location: pika:sebhoss/suppress-warnings.git
   - name: null-analysis
     group: stable
-    repository: git@github:sebhoss/null-analysis.git
+    repository: github:sebhoss/null-analysis.git
     mirrors:
       - name: github
-        location: git@github:sebhoss/null-analysis.git
+        location: github:sebhoss/null-analysis.git
       - name: bitbucket
-        location: git@bitbucket:sebhoss/null-analysis.git
+        location: bitbucket:sebhoss/null-analysis.git
       - name: gitlab
-        location: git@gitlab:sebastian.hoss/null-analysis.git
+        location: gitlab:sebastian.hoss/null-analysis.git
   - name: storage-units
     group: stable
-    repository: git@github:sebhoss/storage-units.git
+    repository: github:sebhoss/storage-units.git
     mirrors:
       - name: github
-        location: git@github:sebhoss/storage-units.git
+        location: github:sebhoss/storage-units.git
       - name: bitbucket
-        location: git@bitbucket:sebhoss/storage-units.git
+        location: bitbucket:sebhoss/storage-units.git
       - name: gitlab
-        location: git@gitlab:sebastian.hoss/storage-units.git
+        location: gitlab:sebastian.hoss/storage-units.git
   - name: generic-types
     group: stable
-    repository: git@github:sebhoss/generic-types.git
+    repository: github:sebhoss/generic-types.git
     mirrors:
       - name: github
-        location: git@github:sebhoss/generic-types.git
+        location: github:sebhoss/generic-types.git
       - name: bitbucket
-        location: git@bitbucket:sebhoss/generic-types.git
+        location: bitbucket:sebhoss/generic-types.git
       - name: gitlab
-        location: git@gitlab:sebastian.hoss/generic-types.git
+        location: gitlab:sebastian.hoss/generic-types.git
