@@ -1,6 +1,6 @@
 projects:
   - name: memoization.java
-    group: prototypes
+    group: stable
     repository: github:sebhoss/memoization.java.git
     mirrors:
       - name: github
