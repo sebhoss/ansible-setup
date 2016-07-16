@@ -9,6 +9,8 @@ projects:
         location: bitbucket:sebhoss/memoization.java.git
       - name: gitlab
         location: gitlab:sebastian.hoss/memoization.java.git
+      - name: pika
+        location: pika:sebhoss/memoization.java.git
   - name: ansible-setup
     group: stable
     repository: github:sebhoss/ansible-setup.git
@@ -19,6 +21,8 @@ projects:
         location: bitbucket:sebhoss/ansible-setup.git
       - name: gitlab
         location: gitlab:sebastian.hoss/ansible-setup.git
+      - name: pika
+        location: pika:sebhoss/ansible-setup.git
   - name: maven-build-process
     group: stable
     repository: github:sebhoss/maven-build-process.git
@@ -51,6 +55,8 @@ projects:
         location: bitbucket:sebhoss/null-analysis.git
       - name: gitlab
         location: gitlab:sebastian.hoss/null-analysis.git
+      - name: pika
+        location: pika:sebhoss/null-analysis.git
   - name: storage-units
     group: stable
     repository: github:sebhoss/storage-units.git
@@ -61,6 +67,8 @@ projects:
         location: bitbucket:sebhoss/storage-units.git
       - name: gitlab
         location: gitlab:sebastian.hoss/storage-units.git
+      - name: pika
+        location: pika:sebhoss/storage-units.git
   - name: generic-types
     group: stable
     repository: github:sebhoss/generic-types.git
@@ -71,3 +79,5 @@ projects:
         location: bitbucket:sebhoss/generic-types.git
       - name: gitlab
         location: gitlab:sebastian.hoss/generic-types.git
+      - name: pika
+        location: pika:sebhoss/generic-types.git
