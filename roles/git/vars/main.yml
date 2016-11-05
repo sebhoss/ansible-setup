@@ -309,3 +309,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/pruvo.git
+  - name: samca
+    group: prototype
+    repository: bitbucket:sebhoss/samca.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/samca.git
