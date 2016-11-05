@@ -297,3 +297,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/lqj.git
+  - name: noti
+    group: prototype
+    repository: bitbucket:sebhoss/noti.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/noti.git
