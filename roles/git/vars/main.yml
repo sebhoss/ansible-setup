@@ -363,3 +363,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/static-site-maven-plugin.git
+  - name: strings.java
+    group: prototype
+    repository: bitbucket:sebhoss/strings.java.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/strings.java.git
