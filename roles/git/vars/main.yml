@@ -183,3 +183,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/camel-slack-webhook-component.git
+  - name: rondo
+    group: prototype
+    repository: github:sebhoss/rondo.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/rondo.git
