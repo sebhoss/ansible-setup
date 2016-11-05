@@ -81,3 +81,15 @@ projects:
         location: gitlab:sebastian.hoss/generic-types.git
       - name: pika
         location: pika:sebhoss/generic-types.git
+  - name: fiscal-year
+    group: stable
+    repository: github:sebhoss/fiscal-year.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/fiscal-year.git
+      - name: bitbucket
+        location: bitbucket:sebhoss/fiscal-year.git
+      - name: gitlab
+        location: gitlab:sebastian.hoss/fiscal-year.git
+      - name: pika
+        location: pika:sebhoss/fiscal-year.git
