@@ -357,3 +357,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/sola.git
+  - name: static-site-maven-plugin
+    group: prototype
+    repository: bitbucket:sebhoss/static-site-maven-plugin.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/static-site-maven-plugin.git
