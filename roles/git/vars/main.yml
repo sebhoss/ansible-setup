@@ -279,3 +279,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/klaraj.git
+  - name: kompreni
+    group: prototype
+    repository: bitbucket:sebhoss/kompreni.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/kompreni.git
