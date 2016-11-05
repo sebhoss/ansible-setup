@@ -219,3 +219,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/ekagi.git
+  - name: endless
+    group: prototype
+    repository: bitbucket:sebhoss/endless.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/endless.git
