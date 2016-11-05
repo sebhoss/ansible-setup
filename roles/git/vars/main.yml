@@ -99,3 +99,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/wait-for-postgres.git
+  - name: http-client-adapter.java
+    group: prototype
+    repository: github:sebhoss/http-client-adapter.java.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/http-client-adapter.java.git
