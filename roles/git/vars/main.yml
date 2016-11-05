@@ -147,3 +147,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/identifier-service.git
+  - name: finj
+    group: stable
+    repository: github:sebhoss/finj.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/finj.git
