@@ -261,3 +261,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/gojo-framework.git
+  - name: java-code-quality
+    group: book
+    repository: bitbucket:sebhoss/java-code-quality.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/java-code-quality.git
