@@ -345,3 +345,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/simca.git
+  - name: singarde
+    group: prototype
+    repository: bitbucket:sebhoss/singarde.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/singarde.git
