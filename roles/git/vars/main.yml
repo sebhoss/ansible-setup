@@ -267,3 +267,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/java-code-quality.git
+  - name: java-testing-strategies
+    group: book
+    repository: bitbucket:sebhoss/java-testing-strategies.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/java-testing-strategies.git
