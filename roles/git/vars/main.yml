@@ -375,3 +375,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/tempo.git
+  - name: thats-interesting
+    group: prototype
+    repository: bitbucket:sebhoss/thats-interesting.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/thats-interesting.git
