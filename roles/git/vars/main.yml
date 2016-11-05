@@ -129,3 +129,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/reguloj.git
+  - name: jdt-settings
+    group: stable
+    repository: github:sebhoss/jdt-settings.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/jdt-settings.git
