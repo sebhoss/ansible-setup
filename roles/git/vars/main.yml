@@ -189,3 +189,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/rondo.git
+  - name: arikuzu
+    group: prototype
+    repository: bitbucket:sebhoss/arikuzu.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/arikuzu.git
