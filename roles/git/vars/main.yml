@@ -315,3 +315,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/samca.git
+  - name: relajso
+    group: prototype
+    repository: bitbucket:sebhoss/relajso.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/relajso.git
