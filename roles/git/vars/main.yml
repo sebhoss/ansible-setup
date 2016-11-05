@@ -165,3 +165,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/annotated-contracts.git
+  - name: doxia-module-wikitext
+    group: prototype
+    repository: github:sebhoss/doxia-module-wikitext.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/doxia-module-wikitext.git
