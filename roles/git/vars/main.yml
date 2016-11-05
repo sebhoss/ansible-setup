@@ -159,3 +159,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/bc-clj.git
+  - name: annotated-contracts
+    group: prototype
+    repository: github:sebhoss/annotated-contracts.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/annotated-contracts.git
