@@ -381,3 +381,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/thats-interesting.git
+  - name: tox-dns
+    group: prototype
+    repository: bitbucket:sebhoss/tox-dns.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/tox-dns.git
