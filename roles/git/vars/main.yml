@@ -171,3 +171,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/doxia-module-wikitext.git
+  - name: github-maven-extension
+    group: prototype
+    repository: github:sebhoss/github-maven-extension.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/github-maven-extension.git
