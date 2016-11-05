@@ -111,3 +111,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/sebhoss.github.io.git
+  - name: maven-docbook-sample
+    group: examples
+    repository: github:sebhoss/maven-docbook-sample.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/maven-docbook-sample.git
