@@ -225,3 +225,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/endless.git
+  - name: docker-compose.java
+    group: prototype
+    repository: bitbucket:sebhoss/docker-compose.java.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/docker-compose.java.git
