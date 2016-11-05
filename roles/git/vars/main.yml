@@ -231,3 +231,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/docker-compose.java.git
+  - name: fairbund
+    group: prototype
+    repository: bitbucket:sebhoss/fairbund.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/fairbund.git
