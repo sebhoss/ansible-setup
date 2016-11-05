@@ -135,3 +135,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/jdt-settings.git
+  - name: junit-testdata-rule
+    group: prototype
+    repository: github:sebhoss/junit-testdata-rule.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/junit-testdata-rule.git
