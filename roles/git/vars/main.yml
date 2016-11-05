@@ -393,3 +393,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/units-dsl.git
+  - name: yosql
+    group: prototype
+    repository: bitbucket:sebhoss/yosql.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/yosql.git
