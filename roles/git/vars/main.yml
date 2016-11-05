@@ -105,3 +105,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/http-client-adapter.java.git
+  - name: sebhoss.github.io
+    group: stable
+    repository: github:sebhoss/sebhoss.github.io.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/sebhoss.github.io.git
