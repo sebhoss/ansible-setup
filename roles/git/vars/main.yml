@@ -387,3 +387,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/tox-dns.git
+  - name: units-dsl
+    group: prototype
+    repository: bitbucket:sebhoss/units-dsl.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/units-dsl.git
