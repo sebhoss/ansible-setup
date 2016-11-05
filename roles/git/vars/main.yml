@@ -112,8 +112,14 @@ projects:
       - name: github
         location: github:sebhoss/sebhoss.github.io.git
   - name: maven-docbook-sample
-    group: examples
+    group: example
     repository: github:sebhoss/maven-docbook-sample.git
     mirrors:
       - name: github
         location: github:sebhoss/maven-docbook-sample.git
+  - name: truth-property-proposition
+    group: prototype
+    repository: github:sebhoss/truth-property-proposition.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/truth-property-proposition.git
