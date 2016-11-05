@@ -285,3 +285,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/kompreni.git
+  - name: kurado
+    group: prototype
+    repository: bitbucket:sebhoss/kurado.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/kurado.git
