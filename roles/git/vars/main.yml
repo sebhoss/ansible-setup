@@ -339,3 +339,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/pasi.git
+  - name: simca
+    group: prototype
+    repository: bitbucket:sebhoss/simca.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/simca.git
