@@ -333,3 +333,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/recenzo.git
+  - name: pasi
+    group: prototype
+    repository: bitbucket:sebhoss/pasi.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/pasi.git
