@@ -321,3 +321,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/relajso.git
+  - name: reen
+    group: prototype
+    repository: bitbucket:sebhoss/reen.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/reen.git
