@@ -273,3 +273,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/java-testing-strategies.git
+  - name: klaraj
+    group: prototype
+    repository: bitbucket:sebhoss/klaraj.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/klaraj.git
