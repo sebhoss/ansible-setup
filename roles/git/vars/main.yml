@@ -303,3 +303,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/noti.git
+  - name: pruvo
+    group: prototype
+    repository: bitbucket:sebhoss/pruvo.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/pruvo.git
