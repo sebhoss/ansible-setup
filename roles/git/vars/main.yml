@@ -195,3 +195,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/arikuzu.git
+  - name: babili
+    group: prototype
+    repository: bitbucket:sebhoss/babili.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/babili.git
