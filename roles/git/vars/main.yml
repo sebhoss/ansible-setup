@@ -201,3 +201,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/babili.git
+  - name: bileto
+    group: prototype
+    repository: bitbucket:sebhoss/bileto.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/bileto.git
