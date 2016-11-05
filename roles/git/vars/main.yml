@@ -213,3 +213,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/common-models.git
+  - name: ekagi
+    group: prototype
+    repository: bitbucket:sebhoss/ekagi.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/ekagi.git
