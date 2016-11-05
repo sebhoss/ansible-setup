@@ -207,3 +207,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/bileto.git
+  - name: common-models
+    group: prototype
+    repository: bitbucket:sebhoss/common-models.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/common-models.git
