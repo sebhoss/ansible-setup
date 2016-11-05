@@ -291,3 +291,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/kurado.git
+  - name: lqj
+    group: prototype
+    repository: bitbucket:sebhoss/lqj.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/lqj.git
