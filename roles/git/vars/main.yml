@@ -237,3 +237,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/fairbund.git
+  - name: fina
+    group: prototype
+    repository: bitbucket:sebhoss/fina.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/fina.git
