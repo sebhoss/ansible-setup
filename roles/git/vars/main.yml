@@ -153,3 +153,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/finj.git
+  - name: bc-clj
+    group: stable
+    repository: github:sebhoss/bc-clj.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/bc-clj.git
