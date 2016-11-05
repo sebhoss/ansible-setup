@@ -177,3 +177,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/github-maven-extension.git
+  - name: camel-slack-webhook-component
+    group: prototype
+    repository: github:sebhoss/camel-slack-webhook-component.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/camel-slack-webhook-component.git
