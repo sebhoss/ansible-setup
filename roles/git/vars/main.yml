@@ -255,3 +255,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/footzy.git
+  - name: gojo-framework
+    group: prototype
+    repository: bitbucket:sebhoss/gojo-framework.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/gojo-framework.git
