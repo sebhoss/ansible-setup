@@ -351,3 +351,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/singarde.git
+  - name: sola
+    group: prototype
+    repository: bitbucket:sebhoss/sola.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/sola.git
