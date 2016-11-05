@@ -243,3 +243,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/fina.git
+  - name: finigo
+    group: prototype
+    repository: bitbucket:sebhoss/finigo.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/finigo.git
