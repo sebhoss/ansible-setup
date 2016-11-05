@@ -399,3 +399,180 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/yosql.git
+  - name: yosql
+    group: prototype
+    repository: bitbucket:sebhoss/yosql.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/yosql.git
+  - name: studio-full-master
+    group: talend
+    repository: github:sebhoss/studio-full-master.git
+  - name: studio-se-master
+    group: talend
+    repository: github:sebhoss/studio-se-master.git
+  - name: tsap-rfc-server
+    group: talend
+    repository: github:sebhoss/tsap-rfc-server.git
+  - name: tac
+    group: talend
+    repository: github:sebhoss/tac.git
+  - name: jobserver
+    group: talend
+    repository: github:sebhoss/jobserver.git
+  - name: Repository-Manager
+    group: talend
+    repository: github:sebhoss/Repository-Manager.git
+  - name: gwt-toolkit
+    group: talend
+    repository: github:sebhoss/gwt-toolkit.git
+  - name: tbpm-studio-ee
+    group: talend
+    repository: github:sebhoss/tbpm-studio-ee.git
+  - name: toem-studio-se
+    group: talend
+    repository: github:sebhoss/toem-studio-se.git
+  - name: toem-studio-ee
+    group: talend
+    repository: github:sebhoss/toem-studio-ee.git
+  - name: tmdm-studio-se
+    group: talend
+    repository: github:sebhoss/tmdm-studio-se.git
+  - name: tmdm-studio-ee
+    group: talend
+    repository: github:sebhoss/tmdm-studio-ee.git
+  - name: tmdm-common
+    group: talend
+    repository: github:sebhoss/tmdm-common.git
+  - name: tesb-studio-se
+    group: talend
+    repository: github:sebhoss/tesb-studio-se.git
+  - name: tesb-studio-ee
+    group: talend
+    repository: github:sebhoss/tesb-studio-ee.git
+  - name: tdq-studio-se
+    group: talend
+    repository: github:sebhoss/tdq-studio-se.git
+  - name: tdq-studio-ee
+    group: talend
+    repository: github:sebhoss/tdq-studio-ee.git
+  - name: tdi-studio-se
+    group: talend
+    repository: github:sebhoss/tdi-studio-se.git
+  - name: tdi-studio-ee
+    group: talend
+    repository: github:sebhoss/tdi-studio-ee.git
+  - name: tcommon-studio-se
+    group: talend
+    repository: github:sebhoss/tcommon-studio-se.git
+  - name: tcommon-studio-ee
+    group: talend
+    repository: github:sebhoss/tcommon-studio-ee.git
+  - name: tbd-studio-se
+    group: talend
+    repository: github:sebhoss/tbd-studio-se.git
+  - name: tbd-studio-ee
+    group: talend
+    repository: github:sebhoss/tbd-studio-ee.git
+  - name: tamc-ee
+    group: talend
+    repository: github:sebhoss/tamc-ee.git
+  - name: components
+    group: talend
+    repository: github:sebhoss/components.git
+  - name: documentation
+    group: talend
+    repository: github:sebhoss/documentation.git
+  - name: tipaas-ops
+    group: talend
+    repository: github:sebhoss/tipaas-ops.git
+  - name: devtools
+    group: talend
+    repository: github:sebhoss/devtools.git
+  - name: documentation-dita
+    group: talend
+    repository: github:sebhoss/documentation-dita.git
+  - name: tesb-registry
+    group: talend
+    repository: github:sebhoss/tesb-registry.git
+  - name: talend-pulse
+    group: talend
+    repository: github:sebhoss/talend-pulse.git
+  - name: tesb-rt-se
+    group: talend
+    repository: github:sebhoss/tesb-rt-se.git
+  - name: components-ee
+    group: talend
+    repository: github:sebhoss/components-ee.git
+  - name: puppet-studio_builder
+    group: talend
+    repository: github:sebhoss/puppet-studio_builder.git
+  - name: daikon
+    group: talend
+    repository: github:sebhoss/daikon.git
+  - name: tesb-rt-ee
+    group: talend
+    repository: github:sebhoss/tesb-rt-ee.git
+  - name: docker-talend
+    group: talend
+    repository: github:sebhoss/docker-talend.git
+  - name: ps-docker
+    group: talend
+    repository: github:sebhoss/ps-docker.git
+  - name: tesb-rt-se-systemtest
+    group: talend
+    repository: github:sebhoss/tesb-rt-se-systemtest.git
+  - name: tesb-bonita
+    group: talend
+    repository: github:sebhoss/tesb-bonita.git
+  - name: tesb-rt-platform
+    group: talend
+    repository: github:sebhoss/tesb-rt-platform.git
+  - name: tesb-eventlogging
+    group: talend
+    repository: github:sebhoss/tesb-eventlogging.git
+  - name: training-esb-basics
+    group: talend
+    repository: github:sebhoss/training-esb-basics.git
+  - name: tools
+    group: talend
+    repository: github:sebhoss/tools.git
+  - name: daikon-ee
+    group: talend
+    repository: github:sebhoss/daikon-ee.git
+  - name: tesb-provisioning
+    group: talend
+    repository: github:sebhoss/tesb-provisioning.git
+  - name: tesb-authorization
+    group: talend
+    repository: github:sebhoss/tesb-authorization.git
+  - name: studio-all
+    group: talend
+    repository: github:sebhoss/studio-all.git
+  - name: tesb-qa-models
+    group: talend
+    repository: github:sebhoss/tesb-qa-models.git
+  - name: tesb-qa-buildtools
+    group: talend
+    repository: github:sebhoss/tesb-qa-buildtools.git
+  - name: tesb-qa-runtime
+    group: talend
+    repository: github:sebhoss/tesb-qa-runtime.git
+  - name: dkr
+    group: talend
+    repository: github:sebhoss/dkr.git
+  - name: tesb-asf
+    group: talend
+    repository: github:sebhoss/tesb-asf.git
+  - name: tesb-qa-citest-models
+    group: talend
+    repository: github:sebhoss/tesb-qa-citest-models.git
+  - name: tesb-qa-load
+    group: talend
+    repository: github:sebhoss/tesb-qa-load.git
+  - name: training-esb-admin
+    group: talend
+    repository: github:sebhoss/training-esb-admin.git
+  - name: studio-tools
+    group: talend
+    repository: github:sebhoss/studio-tools.git
