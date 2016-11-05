@@ -327,3 +327,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/reen.git
+  - name: recenzo
+    group: prototype
+    repository: bitbucket:sebhoss/recenzo.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/recenzo.git
