@@ -249,3 +249,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/finigo.git
+  - name: footzy
+    group: prototype
+    repository: bitbucket:sebhoss/footzy.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/footzy.git
