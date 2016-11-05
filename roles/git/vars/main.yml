@@ -369,3 +369,9 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/strings.java.git
+  - name: tempo
+    group: prototype
+    repository: bitbucket:sebhoss/tempo.git
+    mirrors:
+      - name: bitbucket
+        location: bitbucket:sebhoss/tempo.git
