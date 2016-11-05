@@ -141,3 +141,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/junit-testdata-rule.git
+  - name: identifier-service
+    group: prototype
+    repository: github:sebhoss/identifier-service.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/identifier-service.git
