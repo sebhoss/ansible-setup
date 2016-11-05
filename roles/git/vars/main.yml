@@ -93,3 +93,9 @@ projects:
         location: gitlab:sebastian.hoss/fiscal-year.git
       - name: pika
         location: pika:sebhoss/fiscal-year.git
+  - name: wait-for-postgres
+    group: prototype
+    repository: github:sebhoss/wait-for-postgres.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/wait-for-postgres.git
