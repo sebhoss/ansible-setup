@@ -123,3 +123,9 @@ projects:
     mirrors:
       - name: github
         location: github:sebhoss/truth-property-proposition.git
+  - name: reguloj
+    group: stable
+    repository: github:sebhoss/reguloj.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/reguloj.git
