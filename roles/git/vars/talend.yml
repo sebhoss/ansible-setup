@@ -1,0 +1,179 @@
+projects:
+  - name: tesb-qa-citest-models
+    remotes: []
+  - name: tesb-qa-load
+    remotes: []
+  - name: training-esb-admin
+    remotes: []
+  - name: studio-tools
+    remotes: []
+  - name: studio-full-master
+    remotes:
+      - name: sebhoss
+        url: "git@github.com:sebhoss/studio-full-master.git"
+  - name: studio-se-master
+    remotes:
+      - name: sebhoss
+        url: "git@github.com:sebhoss/studio-se-master.git"
+  - name: tsap-rfc-server
+    remotes:
+      - name: sebhoss
+        url: "git@github.com:sebhoss/tsap-rfc-server.git"
+  - name: tac
+    remotes: []
+  - name: jobserver
+    remotes: []
+  - name: Repository-Manager
+    remotes: []
+  - name: gwt-toolkit
+    remotes: []
+  - name: tbpm-studio-ee
+    remotes: []
+  - name: toem-studio-se
+    remotes: []
+  - name: toem-studio-ee
+    remotes: []
+  - name: tmdm-studio-se
+    remotes: []
+  - name: tmdm-studio-ee
+    remotes: []
+  - name: tmdm-common
+    remotes: []
+  - name: tesb-studio-se
+    remotes:
+      - name: sebhoss
+        url: "git@github.com:sebhoss/tesb-studio-se.git"
+  - name: tesb-studio-ee
+    remotes: []
+  - name: tdq-studio-se
+    remotes: []
+  - name: tdq-studio-ee
+    remotes: []
+  - name: tdi-studio-se
+    remotes: []
+  - name: tdi-studio-ee
+    remotes: []
+  - name: tcommon-studio-se
+    remotes: []
+  - name: tcommon-studio-ee
+    remotes: []
+  - name: tbd-studio-se
+    remotes: []
+  - name: tbd-studio-ee
+    remotes: []
+  - name: tamc-ee
+    remotes: []
+  - name: components
+    remotes: []
+  - name: documentation
+    remotes: []
+  - name: tipaas-ops
+    remotes: []
+  - name: devtools
+    remotes: []
+  - name: documentation-dita
+    remotes: []
+  - name: tesb-registry
+    remotes: []
+  - name: talend-pulse
+    remotes: []
+  - name: tesb-rt-se
+    remotes:
+      - name: sebhoss
+        url: "git@github.com:sebhoss/tesb-rt-se.git"
+  - name: components-ee
+    remotes: []
+  - name: puppet-studio_builder
+    remotes: []
+  - name: daikon
+    remotes:
+      - name: sebhoss
+        url: "git@github.com:sebhoss/daikon.git"
+  - name: tesb-rt-ee
+    remotes:
+      - name: sebhoss
+        url: "git@github.com:sebhoss/tesb-rt-ee.git"
+  - name: docker-talend
+    remotes: []
+  - name: ps-docker
+    remotes: []
+  - name: tesb-rt-se-systemtest
+    remotes: []
+  - name: tesb-bonita
+    remotes:
+      - name: sebhoss
+        url: "git@github.com:sebhoss/tesb-bonita.git"
+  - name: tesb-rt-platform
+    remotes: []
+  - name: tesb-eventlogging
+    remotes: []
+  - name: training-esb-basics
+    remotes: []
+  - name: tools
+    remotes:
+      - name: sebhoss
+        url: "git@github.com:sebhoss/tools.git"
+  - name: daikon-ee
+    remotes: []
+  - name: tesb-provisioning
+    remotes: []
+  - name: tesb-authorization
+    remotes: []
+  - name: studio-all
+    remotes: []
+  - name: tesb-qa-models
+    remotes: []
+  - name: tesb-qa-buildtools
+    remotes: []
+  - name: tesb-qa-runtime
+    remotes: []
+  - name: dkr
+    remotes: []
+  - name: tesb-asf
+    remotes: []
+  - name: data-quality
+    remotes: []
+  - name: data-quality-ee
+    remotes: []
+  - name: data-prep
+    remotes: []
+  - name: data-prep-ee
+    remotes: []
+  - name: test-common
+    remotes: []
+  - name: test-swt-common
+    remotes: []
+  - name: test-swt-di
+    remotes: []
+  - name: test-swt-esb
+    remotes: []
+  - name: test-swt-mdm
+    remotes: []
+  - name: test-performance-mdm
+    remotes: []
+  - name: tuj-bigdata
+    remotes: []
+  - name: tuj
+    remotes: []
+  - name: tuj-master
+    remotes: []
+  - name: tdm-bd
+    remotes: []
+  - name: tmdm-server-se
+    remotes: []
+  - name: tmdm-server-ee
+    remotes: []
+  - name: platform-services
+    remotes: []
+  - name: react-talend-components
+    remotes: []
+  - name: training-automation
+    remotes: []
+  - name: talend-jenkins-automation
+    remotes: []
+  - name: tuj-config
+    remotes: []
+  - name: training-common
+    remotes: []
+  - name: puppet-cloud_ops
+    remotes: []

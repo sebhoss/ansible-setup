@@ -20,6 +20,10 @@ git:
 	@ssh-add ~/.ssh/key-for-pikacode
 	@ansible-playbook -i hosts desktop.yml --tags git --vault-password-file ~/.ansible/pass.txt
 
+talend:
+	@ssh-add ~/.ssh/key-for-github
+	@ansible-playbook -i hosts desktop.yml --tags talend --vault-password-file ~/.ansible/pass.txt
+
 github:
 	@ansible-playbook -i hosts desktop.yml --tags github --vault-password-file ~/.ansible/pass.txt
 

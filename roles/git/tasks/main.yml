@@ -29,7 +29,7 @@
   with_items: "{{ projects }}"
   tags: git
 
-- name: setup git push mirrors
+- name: setup git push mirrors for origin
   shell: "git remote set-url origin --push --add {{ item.1.location }} && touch {{ user.git }}/{{ item.0.group }}/{{ item.0.name }}/.ansible-git-mirror-{{ item.1.name }}"
   args:
     chdir: "{{ user.git }}/{{ item.0.group }}/{{ item.0.name }}"
@@ -38,4 +38,50 @@
     - "{{ projects }}"
     - mirrors
   tags: git
-    
+
+- name: setup git extra remotes
+  shell: "git remote add {{ item.1.name }} {{ item.1.location }} && touch {{ user.git }}/{{ item.0.group }}/{{ item.0.name }}/.ansible-git-remote-{{ item.1.name }}"
+  args:
+    chdir: "{{ user.git }}/{{ item.0.group }}/{{ item.0.name }}"
+    creates: "{{ user.git }}/{{ item.0.group }}/{{ item.0.name }}/.ansible-git-remote-{{ item.1.name }}"
+  with_subelements:
+    - "{{ projects }}"
+    - mirrors
+  tags: git
+
+- include_vars:
+    file: talend.yml
+    name: talendrepositories
+  tags:
+    - git
+    - talend
+
+- name: create git group repository directories
+  file:
+    path: "{{ user.git }}/talend"
+    mode: 0700
+    state: directory
+  tags:
+    - git
+    - talend
+
+- name: clone Talend git repositories
+  shell: "git clone github:/talend/{{ item.name }}.git {{ user.git }}/talend/{{ item.name }}"
+  args:
+    creates: "{{ user.git }}/talend/{{ item.name }}"
+  with_items: "{{ talendrepositories.projects }}"
+  tags: 
+    - git
+    - talend
+
+- name: setup Talend git extra remotes
+  shell: "git remote add {{ item.1.name }} {{ item.1.url }} && touch {{ user.git }}/talend/{{ item.0.name }}/.ansible-git-remote-{{ item.1.name }}"
+  args:
+    chdir: "{{ user.git }}/talend/{{ item.0.name }}"
+    creates: "{{ user.git }}/talend/{{ item.0.name }}/.ansible-git-remote-{{ item.1.name }}"
+  with_subelements:
+    - "{{ talendrepositories.projects }}"
+    - remotes
+  tags: 
+    - git
+    - talend
