@@ -405,3 +405,10 @@ projects:
     mirrors:
       - name: bitbucket
         location: bitbucket:sebhoss/yosql.git
+  - name: jenkins-seed-jobs
+    group: stable
+    repository: github:sebhoss/jenkins-seed-jobs.git
+    mirrors:
+      - name: github
+        location: github:sebhoss/jenkins-seed-jobs.git
+        
