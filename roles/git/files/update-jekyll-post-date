@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# pattern for any ISO8601 compatible date pattern
+iso_date="[0-9][0-9][0-9][0-9]*-[0-9][0-9]*-[0-9][0-9]"
+# pattern for any date in the front matter of a post
+any_date="date\: $iso_date"
+
+# Current date in ISO8601
+now=`date +%Y-%m-%d`
+# today's replacement for the above pattern
+today="date\: $now"
+
+# start- and end-delimiters of a post front matter
+front_matter="---"
+
+# project relative paths
+modified_files=`git diff --name-only HEAD`
+
+for file in $modified_files; do
+    # only modify Jekyll posts
+    if [[ $file == _posts/*.asciidoc ]]; then
+        # extract current post date from front matter (first match)
+        post_date=`grep -m 1 -o "$any_date" "$file" | head -1 | grep -o "$iso_date"`
+
+        # only modify posts that are not up-to-date yet
+        if [[ $post_date != $today ]]; then
+            # update the front matter of the post with today's date
+            sed -i -e "/$front_matter/,/$front_matter/s/$any_date/$today/" "$file"
+            # add the updated file to the git index so it becomes part of the current commit
+            git add "$file"
+        fi
+    fi
+done
+
+exit
